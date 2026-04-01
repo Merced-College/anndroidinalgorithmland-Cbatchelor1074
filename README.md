@@ -22,3 +22,9 @@ Extract (unzip) the file on your computer.
 Place the extracted audio file into the project folder named content.
 
 Download all of the whole content folder, and put this in your project.
+
+# Chase Batchelor, Xandra Leal, Matthew Briones
+# March 31, 2026
+# CPSC-39-12106
+
+Project setup completed successfully.
