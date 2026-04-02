@@ -29,6 +29,8 @@ Download all of the whole content folder, and put this in your project.
 
 # This will project will a mini-game!
 
+Project setup completed successfully.
+
 ## Code Exploration
 
 1. src contains all of the program's java files that are required to run the game.
@@ -52,4 +54,26 @@ Download all of the whole content folder, and put this in your project.
 2. The scores are saved as integers.
 3. It would make sense to implement the sorting of scores within LeaderboardAlgorithms.java since sorting is an algorithm.
 
-Project setup completed successfully.
+## Sorting
+
+1. We added the sorting code in the LeaderboardAlgorithms class because this class is responsible for handling algorithms related to the leaderboard.
+
+2. We chose this location because it keeps all algorithmic logic in one place and maintains organization.
+
+3. The data structure being sorted is an ArrayList of ScoreEntry objects.
+
+4. We used the selection sort algorithm.
+
+5. The algorithm works by looping through the list, finding the highest score, and placing it at the current position. It repeats until all elements are sorted in descending order.
+
+6. We verified the sorting was correct by running the program, loading the data, and clicking the sort button to ensure that the information was correct.
+
+## Searching
+
+1. Binary search works by checking the middle element of a sorted list and comparing. Depending on where the target is found, the half is searched. This repeats until the target is foundm or the search is empty.
+
+2. Data must be sorted because binary search decides whether to must left or right based on the comparison to the middle value. If data is not sorted, that would be an unreliable decision.
+
+3. The variables used were low, high, and mid.
+
+4. If the username is not found, -1 is returned, and the program displays a message showing that the user was not found.
