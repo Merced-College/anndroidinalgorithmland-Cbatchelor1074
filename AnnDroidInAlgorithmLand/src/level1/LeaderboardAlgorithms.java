@@ -94,4 +94,37 @@ public class LeaderboardAlgorithms {
         
         return -1;
     }
+    
+    
+    //EXTRA CREDIT: Quicksort implementation
+    public static void quickSortByDescending(ArrayList<ScoreEntry> list, int low, int high) {
+    	if (low < high) {
+    		int pivotIndex = partition(list, low, high);
+    		
+    		quickSortByDescending(list, low, pivotIndex - 1);
+    		quickSortByDescending(list, pivotIndex + 1; high);
+    	}
+    }
+    
+    private static int partition(ArrayList<ScoreEntry> list, int low, int high) {
+    	ScoreEntry pivot = list.get(high);
+    	int i = low - i;
+    	
+    	for (int j = low; j < high; j++) {
+    		if (list.get(j).getScore() >= pivot.getScore()) {
+    			i++;
+    			
+    			ScoreEntry temp = list.get(i);
+    			list.set(i,  list.get(j));
+    			list.set(j, temp);
+    		}
+    	}
+    	
+    	ScoreEntry temp = list.get(i + 1);
+    	list.set(i + 1, list.get(high));
+    	list.set(high, temp);
+    	
+    	return i + 1;
+    	
+    }
 }

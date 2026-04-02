@@ -77,3 +77,5 @@ Project setup completed successfully.
 3. The variables used were low, high, and mid.
 
 4. If the username is not found, -1 is returned, and the program displays a message showing that the user was not found.
+
+Extra Credit: We also implemented a quicksort algorithm as extra credit. Quicksort works by selecting a pivot value, and paritioning into lists greater than and less than the pivot, and recursively sorting.
